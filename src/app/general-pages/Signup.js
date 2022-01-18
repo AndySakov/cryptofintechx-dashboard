@@ -43,7 +43,7 @@ export class Signup extends Component {
               </form>
             </div>{/* az-signup-header */}
             <div className="az-signup-footer">
-              <p>Already have an account? <Link to="/general-pages/signin">Sign In</Link></p>
+              <p>Already have an account? <Link to="/login">Sign In</Link></p>
             </div>{/* az-signin-footer */}
           </div>{/* az-column-signup */}
         </div>{/* az-signup-wrapper */}

@@ -65,7 +65,7 @@ export class Signin extends Component {
             </div>{/* az-signin-header */}
             <div className="az-signin-footer">
               <p><a href="#/">Forgot password?</a></p>
-              <p>Don't have an account? <Link to="/general-pages/signup">Create an Account</Link></p>
+              <p>Don't have an account? <Link to="/signup">Create an Account</Link></p>
             </div>{/* az-signin-footer */}
           </div>{/* az-card-signin */}
         </div>{/* az-signin-wrapper */}
