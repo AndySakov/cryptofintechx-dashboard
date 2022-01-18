@@ -34,7 +34,7 @@ export class Signin extends Component {
         }).then((Response)=> Response.json())
           .then((result) =>{
             console.log(result);
-           if(result.status == 'Inavalid')
+           if(result.status === 'Invalid')
               alert('Invalid User');
             else
             this.props.history.push('./Dashboard');
