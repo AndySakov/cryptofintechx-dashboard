@@ -1,0 +1,13 @@
+{
+  "name": "CRYPTOFINTECHX Dashboard",
+  "description": "Official dashboard for CRYPTOFINTECHX",
+  "keywords": ["cryptocurrency", "cryptofintechx", "finance", "investment", "crypto", "blockchain"],
+  "website": "https://dashboard.cryptofintechx.com/",
+  "repository": "https://github.com/AndySakov/cryptofintechx-dashboard",
+  "success_url": "/login",
+  "buildpacks": [
+    {
+      "url": "https://buildpack-registry.s3.amazonaws.com/buildpacks/mars/create-react-app.tgz"
+    }
+  ]
+}

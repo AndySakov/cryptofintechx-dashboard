@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ComponentsSidebar from '../shared/ComponentsSidebar';
+import ComponentsSidebar from './shared/ComponentsSidebar';
 import {Button, Dropdown, ButtonGroup} from 'react-bootstrap';
 
 export class Buttons extends Component {

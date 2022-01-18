@@ -26,11 +26,11 @@ export class Header extends Component {
           <div className="container">
             <div className="az-header-left">
               <a href="#/" className="az-logo">
-                <span></span> Cryptofintechx
+                <span></span> CRYPTOFINTECHX
               </a>
               <a
                 id="azMenuShow"
-                onClick={event => this.toggleHeaderMenu(event)}
+                onClick={(event) => this.toggleHeaderMenu(event)}
                 className="az-header-menu-icon d-lg-none"
                 href="#/"
               >
@@ -44,7 +44,7 @@ export class Header extends Component {
                 </Link>
                 <a
                   href="#/"
-                  onClick={event => this.toggleHeaderMenu(event)}
+                  onClick={(event) => this.toggleHeaderMenu(event)}
                   className="close"
                 >
                   &times;
@@ -670,7 +670,7 @@ export class Header extends Component {
                   <div className="az-dropdown-header mg-b-20 d-sm-none">
                     <a
                       href="#/"
-                      onClick={event => this.closeMenu(event)}
+                      onClick={(event) => this.closeMenu(event)}
                       className="az-header-arrow"
                     >
                       <i className="icon ion-md-arrow-back"></i>
@@ -684,7 +684,7 @@ export class Header extends Component {
                     <div className="media new">
                       <div className="az-img-user">
                         <img
-                          src={require("../../assets/images/img2.jpg")}
+                          src={require("../../../assets/images/img2.jpg")}
                           alt=""
                         ></img>
                       </div>
@@ -699,7 +699,7 @@ export class Header extends Component {
                     <div className="media new">
                       <div className="az-img-user online">
                         <img
-                          src={require("../../assets/images/img3.jpg")}
+                          src={require("../../../assets/images/img3.jpg")}
                           alt=""
                         ></img>
                       </div>
@@ -714,7 +714,7 @@ export class Header extends Component {
                     <div className="media">
                       <div className="az-img-user">
                         <img
-                          src={require("../../assets/images/img4.jpg")}
+                          src={require("../../../assets/images/img4.jpg")}
                           alt=""
                         ></img>
                       </div>
@@ -729,7 +729,7 @@ export class Header extends Component {
                     <div className="media">
                       <div className="az-img-user">
                         <img
-                          src={require("../../assets/images/img5.jpg")}
+                          src={require("../../../assets/images/img5.jpg")}
                           alt=""
                         ></img>
                       </div>
@@ -750,7 +750,7 @@ export class Header extends Component {
               <Dropdown className="az-profile-menu">
                 <Dropdown.Toggle as={"a"} className="az-img-user">
                   <img
-                    src={require("../../assets/images/img1.jpg")}
+                    src={require("../../../assets/images/img1.jpg")}
                     alt=""
                   ></img>
                 </Dropdown.Toggle>
@@ -758,7 +758,7 @@ export class Header extends Component {
                   <div className="az-dropdown-header d-sm-none">
                     <a
                       href="#/"
-                      onClick={event => this.closeMenu(event)}
+                      onClick={(event) => this.closeMenu(event)}
                       className="az-header-arrow"
                     >
                       <i className="icon ion-md-arrow-back"></i>
@@ -767,7 +767,7 @@ export class Header extends Component {
                   <div className="az-header-profile">
                     <div className="az-img-user">
                       <img
-                        src={require("../../assets/images/img1.jpg")}
+                        src={require("../../../assets/images/img1.jpg")}
                         alt=""
                       ></img>
                     </div>
