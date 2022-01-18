@@ -348,7 +348,7 @@ export class Dashboard extends Component {
         <div className="container p-md-0">
         <div className="az-content-body">
           <h2 className="az-content-title-minimal">Hi, welcome back!</h2>
-          <p className="az-content-text-minimal">Your cryptocurrency monitoring and performance dashboard template.</p>
+          <p className="az-content-text-minimal">Your cryptocurrency monitoring and performance dashboard.</p>
           <div className="media media-dashboard-one mg-b-20">
             <div className="media-body">
               <div className="card card-minimal-two">
@@ -828,5 +828,6 @@ export class Dashboard extends Component {
     )
   }
 }
+
 
 export default Dashboard
