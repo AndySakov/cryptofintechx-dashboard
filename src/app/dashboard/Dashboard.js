@@ -578,8 +578,8 @@ export class Dashboard extends Component {
                               <span>BTC = $4865.23</span>
                             </div>
                             <div>
-                              <a href="#/" className="btn btn-primary">Transfer</a>
-                              <a href="#/" className="btn btn-secondary">Receive</a>
+                              <a href="#/" className="btn btn-az-primary">Transfer</a>
+                              <a href="#/" className="btn btn-az-secondary">Receive</a>
                             </div>
                           </div>
                           <div className="tab-pane-body">
@@ -629,8 +629,8 @@ export class Dashboard extends Component {
                               <span>BCH = $290.79</span>
                             </div>
                             <div>
-                              <a href="#/" className="btn btn-primary">Transfer</a>
-                              <a href="#/" className="btn btn-secondary">Receive</a>
+                              <a href="#/" className="btn btn-az-primary">Transfer</a>
+                              <a href="#/" className="btn btn-az-secondary">Receive</a>
                             </div>
                           </div>
                           <div className="tab-pane-body">
@@ -638,7 +638,7 @@ export class Dashboard extends Component {
                               <div className="icon-wrapper"><i className="icon ion-ios-stats"></i></div>
                               <h6>No transactions</h6>
                               <p>There are no transactions for this wallet.</p>
-                              <a href="#/" className="btn btn-primary">Deposit Money</a>
+                              <a href="#/" className="btn btn-az-primary">Deposit Money</a>
                             </div>
                           </div>
                         </Tab.Pane>
@@ -649,8 +649,8 @@ export class Dashboard extends Component {
                               <span>ETH = $149.25</span>
                             </div>
                             <div>
-                              <a href="#/" className="btn btn-primary">Transfer</a>
-                              <a href="#/" className="btn btn-secondary">Receive</a>
+                              <a href="#/" className="btn btn-az-primary">Transfer</a>
+                              <a href="#/" className="btn btn-az-secondary">Receive</a>
                             </div>
                           </div>
                           <div className="tab-pane-body">
@@ -658,7 +658,7 @@ export class Dashboard extends Component {
                               <div className="icon-wrapper"><i className="icon ion-ios-stats"></i></div>
                               <h6>No transactions</h6>
                               <p>There are no transactions for this wallet.</p>
-                              <a href="#/" className="btn btn-primary">Deposit Money</a>
+                              <a href="#/" className="btn btn-az-primary">Deposit Money</a>
                             </div>
                           </div>
                         </Tab.Pane>
@@ -669,8 +669,8 @@ export class Dashboard extends Component {
                               <span>LTC = $37.24</span>
                             </div>
                             <div>
-                              <a href="#/" className="btn btn-primary">Transfer</a>
-                              <a href="#/" className="btn btn-secondary">Receive</a>
+                              <a href="#/" className="btn btn-az-primary">Transfer</a>
+                              <a href="#/" className="btn btn-az-secondary">Receive</a>
                             </div>
                           </div>
                           <div className="tab-pane-body">
@@ -678,7 +678,7 @@ export class Dashboard extends Component {
                               <div className="icon-wrapper"><i className="icon ion-ios-stats"></i></div>
                               <h6>No transactions</h6>
                               <p>There are no transactions for this wallet.</p>
-                              <a href="#/" className="btn btn-primary">Deposit Money</a>
+                              <a href="#/" className="btn btn-az-primary">Deposit Money</a>
                             </div>
                           </div>
                         </Tab.Pane>
@@ -689,8 +689,8 @@ export class Dashboard extends Component {
                               <span>EUR = $1.14</span>
                             </div>
                             <div>
-                              <a href="#/" className="btn btn-primary">Transfer</a>
-                              <a href="#/" className="btn btn-secondary">Receive</a>
+                              <a href="#/" className="btn btn-az-primary">Transfer</a>
+                              <a href="#/" className="btn btn-az-secondary">Receive</a>
                             </div>
                           </div>
                           <div className="tab-pane-body">
@@ -698,7 +698,7 @@ export class Dashboard extends Component {
                               <div className="icon-wrapper"><i className="icon ion-ios-stats"></i></div>
                               <h6>No transactions</h6>
                               <p>There are no transactions for this wallet.</p>
-                              <a href="#/" className="btn btn-primary">Deposit Money</a>
+                              <a href="#/" className="btn btn-az-primary">Deposit Money</a>
                             </div>
                           </div>
                         </Tab.Pane>
@@ -709,8 +709,8 @@ export class Dashboard extends Component {
                               <span>DASH = $113.25</span>
                             </div>
                             <div>
-                              <a href="#/" className="btn btn-primary">Transfer</a>
-                              <a href="#/" className="btn btn-secondary">Receive</a>
+                              <a href="#/" className="btn btn-az-primary">Transfer</a>
+                              <a href="#/" className="btn btn-az-secondary">Receive</a>
                             </div>
                           </div>
                           <div className="tab-pane-body">
@@ -718,7 +718,7 @@ export class Dashboard extends Component {
                               <div className="icon-wrapper"><i className="icon ion-ios-stats"></i></div>
                               <h6>No transactions</h6>
                               <p>There are no transactions for this wallet.</p>
-                              <a href="#/" className="btn btn-primary">Deposit Money</a>
+                              <a href="#/" className="btn btn-az-primary">Deposit Money</a>
                             </div>
                           </div>
                         </Tab.Pane>
@@ -729,8 +729,8 @@ export class Dashboard extends Component {
                               <span>XRP = $0.4921</span>
                             </div>
                             <div>
-                              <a href="#/" className="btn btn-primary">Transfer</a>
-                              <a href="#/" className="btn btn-secondary">Receive</a>
+                              <a href="#/" className="btn btn-az-primary">Transfer</a>
+                              <a href="#/" className="btn btn-az-secondary">Receive</a>
                             </div>
                           </div>
                           <div className="tab-pane-body">
@@ -738,7 +738,7 @@ export class Dashboard extends Component {
                               <div className="icon-wrapper"><i className="icon ion-ios-stats"></i></div>
                               <h6>No transactions</h6>
                               <p>There are no transactions for this wallet.</p>
-                              <a href="#/" className="btn btn-primary">Deposit Money</a>
+                              <a href="#/" className="btn btn-az-primary">Deposit Money</a>
                             </div>
                           </div>
                         </Tab.Pane>

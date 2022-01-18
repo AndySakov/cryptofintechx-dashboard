@@ -10,16 +10,16 @@ class App extends Component {
   componentDidMount() {
     this.onRouteChanged();
   }
-  render () {
-    let headerComponent = !this.state.isFullPageLayout ? <Header/> : '';
-    let footerComponent = !this.state.isFullPageLayout ? <Footer/> : '';
+  render() {
+    let headerComponent = !this.state.isFullPageLayout ? <Header /> : '';
+    let footerComponent = !this.state.isFullPageLayout ? <Footer /> : '';
     return (
       <div>
-        { headerComponent }
+        {headerComponent}
         <div className="az-content-wrapper">
-          <AppRoutes/>
+          <AppRoutes />
         </div>
-        { footerComponent }
+        {footerComponent}
       </div>
     );
   }
@@ -34,19 +34,16 @@ class App extends Component {
     console.log("ROUTE CHANGED");
     window.scrollTo(0, 0);
     const fullPageLayoutRoutes = ['/login', '/signup', '/not-found'];
-    for ( let i = 0; i < fullPageLayoutRoutes.length; i++ ) {
-      if (this.props.location.pathname === fullPageLayoutRoutes[i]) {
-        this.setState({
-          isFullPageLayout: true
-        })
-        document.querySelector('.az-content-wrapper').classList.add('p-0');
-        break;
-      } else {
-        this.setState({
-          isFullPageLayout: false
-        })
-        document.querySelector('.az-content-wrapper').classList.remove('p-0');
-      }
+    if (fullPageLayoutRoutes.includes(this.props.location.pathname)) {
+      this.setState({
+        isFullPageLayout: true
+      })
+      document.querySelector('.az-content-wrapper').classList.add('p-0');
+    } else {
+      this.setState({
+        isFullPageLayout: false
+      })
+      document.querySelector('.az-content-wrapper').classList.remove('p-0');
     }
   }
 
