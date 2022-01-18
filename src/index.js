@@ -5,7 +5,7 @@ import App from './app/App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <BrowserRouter basename="/demo/azia-react-pro/template/demo_6/preview">
+  <BrowserRouter basename="/">
     <App />
   </BrowserRouter>
 , document.getElementById('root'));

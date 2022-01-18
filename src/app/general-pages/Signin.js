@@ -15,18 +15,18 @@ export class Signin extends Component {
               <form action="#/">
                 <div className="form-group">
                   <label>Email</label>
-                  <input type="text" className="form-control" placeholder="Enter your email" defaultValue="demo@bootstrapdash.com"/>
+                  <input type="text" className="form-control" placeholder="Enter your email"/>
                 </div>{/* form-group */}
                 <div className="form-group">
                   <label>Password</label>
-                  <input type="password" className="form-control" placeholder="Enter your password" defaultValue="thisisademo"/>
+                  <input type="password" className="form-control" placeholder="Enter your password"/>
                 </div>{/* form-group */}
                 <Link to="/" className="btn btn-az-primary btn-block">Sign In</Link>
               </form>
             </div>{/* az-signin-header */}
             <div className="az-signin-footer">
               <p><a href="#/">Forgot password?</a></p>
-              <p>Don't have an account? <Link to="/general-pages/signup">Create an Account</Link></p>
+              <p>Don't have an account? <Link to="/signup">Create an Account</Link></p>
             </div>{/* az-signin-footer */}
           </div>{/* az-card-signin */}
         </div>{/* az-signin-wrapper */}
