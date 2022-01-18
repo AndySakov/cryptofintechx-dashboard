@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import './App.scss';
 import AppRoutes from './AppRoutes';
-import Header from './shared/Header';
-import Footer from './shared/Footer';
+import Header from './components/shared/Header';
+import Footer from './components/shared/Footer';
 
 class App extends Component {
   state = {}
@@ -31,7 +31,6 @@ class App extends Component {
   }
 
   onRouteChanged() {
-    console.log("ROUTE CHANGED");
     window.scrollTo(0, 0);
     const fullPageLayoutRoutes = ['/login', '/signup', '/not-found'];
     if (fullPageLayoutRoutes.includes(this.props.location.pathname)) {
