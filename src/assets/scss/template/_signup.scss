@@ -5,29 +5,44 @@
   display: flex;
   justify-content: center;
   min-height: 100vh;
-  background-color: rgba($gray-100, 100);
-
-  @include media-breakpoint-up(lg) { justify-content: flex-end; }
+  @include media-breakpoint-up(lg) {
+    justify-content: flex-end;
+  }
+  background-image: url("../../images/bg1-tinted.jpg");
+  // filter: blur(1px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .az-column-signup-left {
   flex: 1;
   padding: 30px;
+  background: transparent;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   display: none;
 
-  @include media-breakpoint-up(sm) { padding: 40px; }
-  @include media-breakpoint-up(lg) { display: flex; }
+  @include media-breakpoint-up(sm) {
+    padding: 40px;
+  }
+  @include media-breakpoint-up(lg) {
+    display: flex;
+  }
 
-  > div { max-width: 500px; }
+  > div {
+    max-width: 500px;
+    position: absolute;
+  }
 
   .typcn {
     font-size: 80px;
     margin-bottom: 50px;
 
-    &::before { width: auto; }
+    &::before {
+      width: auto;
+    }
   }
 
   .az-logo {
@@ -36,15 +51,26 @@
   }
 
   h5 {
-    color: $gray-900;
+    color: darken($gray-900, 10);
     font-weight: 500;
     font-size: 18px;
     margin-bottom: 25px;
   }
 
-  p {
+  p { 
     line-height: 1.7;
     margin-bottom: 25px;
+    color: darken($gray-900, 5);
+  }
+
+  small {
+    line-height: 1.7;
+    margin-bottom: 25px;
+    color: darken($gray-900, 5);
+
+    a:hover {
+      text-decoration: underline;
+    }
   }
 
   .btn {
@@ -58,7 +84,7 @@
 }
 
 .az-column-signup {
-  background-color: black;
+  background-color: darken($gray-900, 10);
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -88,7 +114,9 @@
     margin-bottom: 25px;
   }
 
-  label { color: $gray-600; }
+  label {
+    color: $gray-600;
+  }
 
   .form-control {
     color: $gray-200;
@@ -108,7 +136,9 @@
     }
   }
 
-  > .btn { margin-top: 25px; }
+  > .btn {
+    margin-top: 25px;
+  }
 
   .row {
     margin-top: 20px;
@@ -132,7 +162,6 @@
 }
 
 .az-signup-footer {
-  
   margin-top: 1.25rem;
 
   p {
@@ -145,6 +174,9 @@
     color: darken($az-color-primary, 20);
     font-weight: 700;
 
-    @include hover-focus() { color: $az-color-primary; text-decoration: underline; }
+    @include hover-focus() {
+      color: $az-color-primary;
+      text-decoration: underline;
+    }
   }
 }

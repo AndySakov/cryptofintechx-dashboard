@@ -77,7 +77,7 @@ export class Signup extends Component {
               </p>
               <a
                 href="https://cryptofintechx.com/#about"
-                className="btn btn-az-outline-primary"
+                className="btn btn-az-primary"
               >
                 Learn More
               </a>
@@ -223,10 +223,7 @@ export class Signup extends Component {
                   {/* input-group */}
                 </Form.Group>
                 {/* form-group */}
-                <Button
-                  className="btn btn-az-primary btn-block"
-                  type="submit"
-                >
+                <Button className="btn btn-az-primary btn-block" type="submit">
                   Get Started!
                 </Button>
                 {/* <div className="row row-xs">
