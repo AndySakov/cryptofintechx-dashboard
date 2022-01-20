@@ -1,7 +1,36 @@
 /* ###### 4.2 Buttons  ###### */
 
+[class*=btn-az-outline-] {
+  padding: 0.4rem 1rem;
+  line-height: 1.657;
+  border-width: 1px;
+  background-color: transparent;
+
+  @include hover-focus() { color: #fff; }
+}
+
+.btn-outline-indigo {
+  border-color: $indigo;
+  color: $indigo;
+
+  @include hover-focus() { background-color: $indigo; }
+}
+
 .btn-az-primary { @include button-variant($az-color-primary, darken($az-color-primary, 5%)); }
 .btn-az-secondary { @include button-variant($az-color-secondary, darken($az-color-secondary, 5%)); }
+.btn-az-outline-primary { 
+  border-color: $az-color-primary;
+  color: $az-color-primary;
+
+  @include hover-focus() { background-color: $az-color-primary; }
+}
+
+.btn-az-outline-secondary { 
+  border-color: $az-color-secondary;
+  color: $az-color-secondary;
+
+  @include hover-focus() { background-color: $az-color-secondary; }
+}
 
 .btn-rounded {
   @include border-radius(50px);

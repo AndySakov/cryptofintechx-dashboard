@@ -40,7 +40,7 @@ export class Header extends Component {
             <div className="az-header-menu">
               <div className="az-header-menu-header">
                 <Link to="/" className="az-logo">
-                  <span></span> Cryptofintechx
+                  <span></span> CRYPTOFINTECHX
                 </Link>
                 <a
                   href="#/"

@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   min-height: 100vh;
-  background-color: rgba($gray-100, .2);
+  background-color: rgba($gray-100, 100);
 
   @include media-breakpoint-up(lg) { justify-content: flex-end; }
 }
@@ -58,7 +58,7 @@
 }
 
 .az-column-signup {
-  background-color: #fff;
+  background-color: black;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -91,10 +91,11 @@
   label { color: $gray-600; }
 
   .form-control {
-    color: $gray-900;
+    color: $gray-200;
     font-weight: 500;
     border-width: 2px;
     border-color: $gray-300;
+    background: $gray-900;
 
     &:focus {
       border-color: $gray-400;
