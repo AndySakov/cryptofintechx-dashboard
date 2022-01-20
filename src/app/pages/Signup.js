@@ -33,8 +33,9 @@ export class Signup extends Component {
       password: form.password.value,
       category: form.category.value,
       dob: form.dob.value,
-    })
+    }, { method: 'POST'})
     .then((res) => {
+      console.log(res);
       alert("User created successfully!")
     })
     .catch((err) => {
