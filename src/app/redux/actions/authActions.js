@@ -1,5 +1,5 @@
-import axios from "../axiosInstance";
-import setAuthToken from "./utils/setAuthToken";
+import axios from "../../axiosInstance";
+import setAuthToken from "../../redux/utils/setAuthToken";
 import jwt_decode from "jwt-decode";
 import {
   GET_ERRORS,

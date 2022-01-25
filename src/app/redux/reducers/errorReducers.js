@@ -1,4 +1,5 @@
-import { GET_ERRORS } from "./actions/types";
+/* eslint-disable import/no-anonymous-default-export */
+import { GET_ERRORS } from "../../redux/actions/types";
 const initialState = {};
 
 export default function(state = initialState, action) {

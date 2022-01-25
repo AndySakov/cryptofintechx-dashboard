@@ -1,4 +1,4 @@
-import axios from "../axiosInstance";
+import axios from "../../axiosInstance";
 const setAuthToken = token => {
   if (token) {
     // Apply authorization token to every request if logged in

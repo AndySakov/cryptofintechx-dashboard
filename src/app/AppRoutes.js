@@ -1,7 +1,7 @@
 import React, { Component, Suspense, lazy } from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import { Provider } from "react-redux";
-import store from "./store";
+import store from "./redux/store";
 
 
 const Dashboard = lazy(() => import('./pages/Dashboard'))

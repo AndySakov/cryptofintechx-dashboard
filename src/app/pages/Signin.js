@@ -1,8 +1,9 @@
+/* eslint-disable react/jsx-no-duplicate-props */
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { loginUser } from "../../actions/authActions";
+import { loginUser } from "../redux/actions/authActions";
 import classnames from "classnames";
 
 export class Signin extends Component {
