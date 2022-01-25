@@ -1,5 +1,8 @@
 import React, { Component, Suspense, lazy } from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
+import { Provider } from "react-redux";
+import store from "./store";
+
 
 const Dashboard = lazy(() => import('./pages/Dashboard'))
 const Profile = lazy(() => import('./pages/Profile'))
@@ -11,6 +14,7 @@ const Page404 = lazy(() => import('./pages/Page404'))
 export class AppRoutes extends Component {
   render() {
     return (
+      <Provider store={store} >
       <Suspense fallback="">
         <Switch>
           <Route exact path="/">
@@ -23,6 +27,7 @@ export class AppRoutes extends Component {
           <Route path="*" component={ Page404 }  />
         </Switch>
       </Suspense>
+      </Provider>
     );
   }
 }
