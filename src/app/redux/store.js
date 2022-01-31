@@ -1,16 +1,24 @@
-import { createStore, applyMiddleware, compose } from "redux";
-import thunk from "redux-thunk";
-import rootReducer from "./reducers";
+import compoundReducer from "./reducers";
+import { persistStore } from "redux-persist";
+import {
+  FLUSH,
+  REHYDRATE,
+  PAUSE,
+  PERSIST,
+  PURGE,
+  REGISTER,
+} from "redux-persist";
+import { configureStore } from "@reduxjs/toolkit";
 
-const initialState = {};
-const middleware = [thunk];
-const store = createStore(
-    rootReducer,
-  initialState,
-  compose(
-    applyMiddleware(...middleware),
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-  )
-);
+export const store = configureStore({
+  reducer: compoundReducer,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: {
+        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+      },
+    }),
+  // enhancers: composeWithDevTools(applyMiddleware(thunk)),
+});
 
-export default store;
+export const persistor = persistStore(store);
