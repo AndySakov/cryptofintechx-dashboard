@@ -40,21 +40,19 @@ export class Signup extends Component {
           dob: form.dob.value,
         })
         .then((res) => {
+          store.dispatch(
+            flashMessage({
+              message: "Your account has been created successfully",
+              type: "success",
+            })
+          );
           this.props.history.push("/login");
-          setTimeout(() => {
-            store.dispatch(
-              flashMessage({
-                message: "Your account has been created successfully",
-                type: "success",
-              })
-            );
-            store.dispatch(
-              flashMessage({
-                message: "You can now login with your credentials",
-                type: "success",
-              })
-            );
-          }, 1000);
+          store.dispatch(
+            flashMessage({
+              message: "You can now login with your credentials",
+              type: "success",
+            })
+          );
         })
         .catch((err) => {
           if (err.response) {
