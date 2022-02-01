@@ -5,6 +5,9 @@ import countries from "country-list-js";
 import { Button, Form, InputGroup } from "react-bootstrap";
 import axios from "../axiosInstance";
 import PasswordStrengthBar from "react-password-strength-bar";
+import { flashMessage } from "../redux/features/messageSlice";
+import FlashMessages from "../components/FlashMessages";
+import { store } from "../redux/store";
 export class Signup extends Component {
   constructor(props) {
     super(props);
@@ -37,25 +40,34 @@ export class Signup extends Component {
           dob: form.dob.value,
         })
         .then((res) => {
-          // console.log(res);
-          // TODO: Change this to redux based alert
-          this.props.history.push("/login")
-          setTimeout(() => {}, 1000)
-          alert("Your account has been created successfully!\nYou can now login with your credentials");
+          this.props.history.push("/login");
+          setTimeout(() => {
+            store.dispatch(
+              flashMessage({
+                message: "Your account has been created successfully",
+                type: "success",
+              })
+            );
+            store.dispatch(
+              flashMessage({
+                message: "You can now login with your credentials",
+                type: "success",
+              })
+            );
+          }, 1000);
         })
         .catch((err) => {
           if (err.response) {
-            alert(
-              `Error: ${err.response.status}\nSee console for more information.`
+            const data = err.response.data;
+            store.dispatch(
+              flashMessage({ message: data.message, type: "danger" })
             );
-            console.log(err.response.data);
+            window.location.reload(true);
           } else if (err.request) {
             console.log(err.request);
           } else {
-            // alert("Unknown error: " + err)
             console.log(err);
           }
-          // console.log(err.config);
         });
     }
   }
@@ -64,6 +76,7 @@ export class Signup extends Component {
       <div>
         <div className="az-signup-wrapper">
           <div className="az-column-signup-left">
+            <FlashMessages />
             <div>
               <i className="typcn typcn-chart-bar-outline"></i>
               <h1 className="az-logo">CRYPTOFINTECHX</h1>

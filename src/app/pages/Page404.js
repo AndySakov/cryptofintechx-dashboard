@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import {Link} from 'react-router-dom'
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export class Page404 extends Component {
   render() {
@@ -9,11 +9,13 @@ export class Page404 extends Component {
           <h1>404</h1>
           <h2>Oopps. The page you were looking for doesn't exist.</h2>
           <h6>You may have mistyped the address or the page may have moved.</h6>
-          <Link to="/dashboard" className="btn btn-az-primary">Back to Home</Link>
+          <Link to="/home" className="btn btn-az-primary">
+            Back to Home
+          </Link>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default Page404
+export default Page404;
