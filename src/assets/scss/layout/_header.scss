@@ -390,9 +390,7 @@
 }
 
 .az-menu-sub-mega {
-  top: calc(
-    #{$az-height-header} + 10px
-  ) !important; //Overrideing react-bootstrap inline css
+  top: calc(#{$az-height-header} + 10px) !important; //Overrideing react-bootstrap inline css
   left: 0 !important; //Overrideing react-bootstrap inline css
   right: 0 !important; //Overrideing react-bootstrap inline css
   transform: translate(0) !important; //Overrideing react-bootstrap inline css
@@ -625,26 +623,24 @@
   margin-left: 15px;
 
   > a {
-    &.new {
-      &::after {
-        content: "";
-        position: absolute;
-        top: 47px;
-        left: 50%;
-        margin-left: -7px;
-        width: 14px;
-        height: 14px;
-        border: 2px solid transparent;
-        border-top-color: $gray-300; //$az-border-color;
-        border-left-color: $gray-300; //$az-border-color;
-        transform: rotate(45deg);
-        background-color: #fff;
-        z-index: 901;
-        display: none;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 47px;
+      left: 50%;
+      margin-left: -7px;
+      width: 14px;
+      height: 14px;
+      border: 2px solid transparent;
+      border-top-color: $gray-300; //$az-border-color;
+      border-left-color: $gray-300; //$az-border-color;
+      transform: rotate(45deg);
+      background-color: #fff;
+      z-index: 901;
+      display: none;
 
-        @include media-breakpoint-up(lg) {
-          bottom: -36px;
-        }
+      @include media-breakpoint-up(lg) {
+        bottom: -36px;
       }
     }
   }

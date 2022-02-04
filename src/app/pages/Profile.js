@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Line } from "react-chartjs-2";
 import { store } from "../redux/store";
 
-export class Profile extends Component {
+class Profile extends Component {
   profileViewersChartData = {
     labels: [
       "Oct 1",
@@ -67,7 +67,14 @@ export class Profile extends Component {
           <div className="az-content-left az-content-left-profile">
             <div className="az-profile-overview">
               <div className="az-img-user">
-                <img src={require("../../assets/images/img10.jpg")} alt="" />
+                <img
+                  src={
+                    store.getState().auth.user.avatar_url === null
+                      ? require("../../assets/images/index.png")
+                      : store.getState().auth.user.avatar_url
+                  }
+                  alt=""
+                />
               </div>
               {/* az-img-user */}
               <div className="d-flex justify-content-between mg-b-20">

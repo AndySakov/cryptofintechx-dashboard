@@ -3,6 +3,7 @@ import { Link, withRouter } from "react-router-dom";
 import { Dropdown } from "react-bootstrap";
 import { store } from "../../redux/store";
 import { logout } from "../../redux/features/authSlice";
+import NotificationBar from "../NotificationBar";
 
 export class Header extends Component {
   closeMenu(e) {
@@ -60,95 +61,15 @@ export class Header extends Component {
                 </div>
               </div>
               <div className="az-header-right">
-                <Dropdown className="az-header-notification">
-                  <Dropdown.Toggle as={"a"} className="new">
-                    <i className="typcn typcn-bell"></i>
-                  </Dropdown.Toggle>
-                  <Dropdown.Menu>
-                    <div className="az-dropdown-header mg-b-20 d-sm-none">
-                      <a
-                        href="#/"
-                        onClick={(event) => this.closeMenu(event)}
-                        className="az-header-arrow"
-                      >
-                        <i className="icon ion-md-arrow-back"></i>
-                      </a>
-                    </div>
-                    <h6 className="az-notification-title">Notifications</h6>
-                    <p className="az-notification-text">
-                      You have 2 unread notification
-                    </p>
-                    <div className="az-notification-list">
-                      <div className="media new">
-                        <div className="az-img-user">
-                          <img
-                            src={require("../../../assets/images/img2.jpg")}
-                            alt=""
-                          ></img>
-                        </div>
-                        <div className="media-body">
-                          <p>
-                            Congratulate <strong>Socrates Itumay</strong> for
-                            work anniversaries
-                          </p>
-                          <span>Mar 15 12:32pm</span>
-                        </div>
-                      </div>
-                      <div className="media new">
-                        <div className="az-img-user online">
-                          <img
-                            src={require("../../../assets/images/img3.jpg")}
-                            alt=""
-                          ></img>
-                        </div>
-                        <div className="media-body">
-                          <p>
-                            <strong>Joyce Chua</strong> just created a new blog
-                            post
-                          </p>
-                          <span>Mar 13 04:16am</span>
-                        </div>
-                      </div>
-                      <div className="media">
-                        <div className="az-img-user">
-                          <img
-                            src={require("../../../assets/images/img4.jpg")}
-                            alt=""
-                          ></img>
-                        </div>
-                        <div className="media-body">
-                          <p>
-                            <strong>Althea Cabardo</strong> just created a new
-                            blog post
-                          </p>
-                          <span>Mar 13 02:56am</span>
-                        </div>
-                      </div>
-                      <div className="media">
-                        <div className="az-img-user">
-                          <img
-                            src={require("../../../assets/images/img5.jpg")}
-                            alt=""
-                          ></img>
-                        </div>
-                        <div className="media-body">
-                          <p>
-                            <strong>Adrian Monino</strong> added new comment on
-                            your photo
-                          </p>
-                          <span>Mar 12 10:40pm</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="dropdown-footer">
-                      <a href="#/">View All Notifications</a>
-                    </div>
-                  </Dropdown.Menu>
-                </Dropdown>
+                <NotificationBar />
                 <Dropdown className="az-profile-menu">
                   <Dropdown.Toggle as={"a"} className="az-img-user">
                     <img
-                      src={require("../../../assets/images/img1.jpg")}
+                      src={
+                        store.getState().auth.user.avatar_url === null
+                          ? require("../../../assets/images/index.png")
+                          : store.getState().auth.user.avatar_url
+                      }
                       alt=""
                     ></img>
                   </Dropdown.Toggle>
@@ -165,7 +86,11 @@ export class Header extends Component {
                     <div className="az-header-profile">
                       <div className="az-img-user">
                         <img
-                          src={require("../../../assets/images/img1.jpg")}
+                          src={
+                            store.getState().auth.user.avatar_url === null
+                              ? require("../../../assets/images/index.png")
+                              : store.getState().auth.user.avatar_url
+                          }
                           alt=""
                         ></img>
                       </div>
