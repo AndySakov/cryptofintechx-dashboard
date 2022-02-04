@@ -66,11 +66,15 @@ const NotificationBar = () => {
           ))}
         </div>
         <div className="dropdown-footer">
-          <a href="#/" onClick={handleClick}>
-            {viewingAll === true
-              ? "Show only recent notifications"
-              : "View All Notifications"}
-          </a>
+          {notifications.length === 0 ? (
+            <span>Nothing to see here</span>
+          ) : (
+            <a href="#/" onClick={handleClick}>
+              {viewingAll === true
+                ? "Show only recent notifications"
+                : "View All Notifications"}
+            </a>
+          )}
         </div>
       </Dropdown.Menu>
     </Dropdown>
